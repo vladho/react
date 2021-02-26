@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 // import ListItem from "./Components/ListItem/ListItem"
-// import List from "./Components/List/List"
+import List from "./Components/List/List"
 import { withCreadentials, request } from "./Components/helpers/request"
 
 class App extends Component {
@@ -35,7 +35,12 @@ class App extends Component {
   }
 
   render() {
-    return <div>{/* <List /> */}</div>
+    const { repos } = this.state
+    return (
+      <div>
+        <List repos={repos} />
+      </div>
+    )
   }
 }
 

@@ -1,11 +1,10 @@
 import React from "react"
 
-const ListItem = () => {
+const ListItem = ({ full_name }) => {
   return (
-    <>
-      <h2>title</h2>
-      <ul></ul>
-    </>
+    <li>
+      <h2>{full_name}</h2>
+    </li>
   )
 }
 
